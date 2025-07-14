@@ -11,13 +11,7 @@
 </head>
 
 <body>
-    <div class="case">
-        <div class="row align-items-start">
-            <div class="col-6" style="background-color: transparent;">
-                <img src="../assets/image/sign.avif">
-            </div>
-        
-            <div class="col-6 pt-5 pb-5" style="background-color: white; margin-top: 7.5%;">
+    <div class="cadre">
                 <h1>SIGN UP</h1>
                 <form action="trait_sign_up.php" method="post">
                     <p>
@@ -47,15 +41,13 @@
                         <input type="password" name="psw" placeholder="Password" class="inside">
                     </p>
                     <p>
-                        <input type="text" name = "genre">
+                        <input type="text" name = "genre" placeholder="Genre">
                     </p>
                     <p>
-                        <input type="text" name = "ville">
+                        <input type="text" name = "ville" placeholder="Ville">
                     </p>
                     <p><input type="submit" value="Register" class="btn"></p>
                 </form>
-            </div>
-        </div>
     </div>
 </body>
 </html>

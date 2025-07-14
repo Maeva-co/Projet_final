@@ -1,5 +1,6 @@
 <?php
-include '../inc/connexion.php'; 
+include ('../inc/connexion.php'); 
+include ('../inc/function.php'); 
 $nom = $_POST['nom'];
 $dtn = $_POST['dtn'];
 $mail = $_POST['mail'];

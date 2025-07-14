@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include "../inc/connexion.php";
 include "../inc/function.php"; 
 $mail = $_POST['email'];
