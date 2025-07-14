@@ -39,18 +39,18 @@ CREATE TABLE emprunt (
     date_retour DATE
 );
 
-INSERT INTO membre VALUES 
+INSERT INTO membre(nom, date_de_naissance, genre, email, ville, mot_de_passe, image_profil) VALUES
 ('Aaron', '1999-04-03','M', 'aaron@gmail.com','New York','abcd','default'),
 ('Adam', '2001-06-18','M', 'adam@gmail.com','London','abcd','default'),
 ('Juliette', '2002-12-21','F', 'juliette@gmail.com','Amsterdam','abcd','default'),
 ('Ella', '2004-08-12','F', 'ella@gmail.com','Paris','abcd','default');
 
 
-INSERT INTO categorie_objet VALUES
+INSERT INTO categorie_objet(nom_categorie) VALUES
 ('esthetique'), ('bricolage'), ('mecanique'), ('cuisine');
 
 
-INSERT INTO objet VALUES
+INSERT INTO objet(nom_objet, id_categorie, id_membre) VALUES
 ('poele','4','1'),
 ('fourchette','4','1'),
 ('couteau','4','1'), 
@@ -77,7 +77,7 @@ INSERT INTO objet VALUES
 ('loquid','2','3'),
 ('pince','3','3'),
 ('tuyau','3','3'),
-('mixer','4`','3'),
+('mixer','4','3'),
 ('verre','4','3'),
 ('passoir','4','3'),
 ('gaz','4','4'),
@@ -91,7 +91,7 @@ INSERT INTO objet VALUES
 ('bracelet','1','4'),
 ('bague','1','4');
 
-INSERT INTO emprunt VALUES
+INSERT INTO emprunt(id_objet, id_membre, date_emprunt, date_retour) VALUES
 ('1','1', '2005-06-04', '2008-12-27'),
 ('2','1', '2005-06-04', '2008-11-27'),
 ('3','2', '2005-02-04', '2008-05-27'),
